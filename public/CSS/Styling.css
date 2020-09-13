@@ -1,0 +1,172 @@
+body {
+    background: url("/Images/Default.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-family: serif;
+}
+
+#weatherContainer {
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 5px black;
+    padding: 50px;
+    border-radius: 10px;
+    position: absolute;
+    visibility: hidden;
+}
+
+#weatherContainer h1 {
+    margin: 5px;
+    font-size: 2.7em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#searchContainer input {
+    width: 24.5em;
+    height: 4vh;
+    position: absolute;
+    top: 10%;
+    right: 40%;
+
+}
+
+#searchContainer button {
+    background-color: rgb(1, 159, 198);
+    width: 7em;
+    height: 4vh;
+    position: absolute;
+    top: 18%;
+    right: 50%;
+}
+
+.searchControl {
+    box-shadow: 2px 2px 5px black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#weatherMain {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#weatherMain div {
+    display: inline-block;
+}
+
+#weatherDescriptionHeader {
+    font-size: 1.8em;
+    vertical-align: 50%;
+}
+
+#temperature {
+    font-size: 2.4em;
+    vertical-align: 25%;
+}
+
+.bottomDetails {
+    display: block;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+
+/****** Responsiveness******/
+
+@media (max-width: 992px) {
+
+body {
+    background: url("/Images/Default.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-family: serif;
+}
+
+#searchContainer input {
+    width: 20.5em;
+    height: 4vh;
+    position: absolute;
+    top: 10%;
+    right: 30%;
+
+}
+
+#searchContainer button {
+    background-color: rgb(1, 159, 198);
+    width: 7em;
+    height: 4vh;
+    position: absolute;
+    top: 18%;
+    right: 45%;
+}
+}
+    
+@media (max-width: 576px) {
+
+body {
+    background: url("/Images/Default.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-family: serif;
+}
+
+#searchContainer input {
+    width: 16em;
+    height: 4vh;
+    position: absolute;
+    top: 10%;
+    right: 25%;
+
+}
+
+#searchContainer button {
+    background-color: rgb(1, 159, 198);
+    width: 7em;
+    height: 4vh;
+    position: absolute;
+    top: 18%;
+    right: 40%;
+}
+}
+
+@media (max-width: 364px) {
+
+body {
+    background: url("/Images/Default.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-family: serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+#searchContainer input {
+    width: 12em;
+    height: 4vh;
+    position: absolute;
+    top: 10%;
+    right: 30%;
+
+}
+
+#searchContainer button {
+    background-color: rgb(1, 159, 198);
+    width: 7em;
+    height: 4vh;
+    position: absolute;
+    top: 18%;
+    right: 40%;
+}
+}

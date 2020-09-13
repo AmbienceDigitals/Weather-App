@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#09688c">
+	<meta name="Author" content="Ambience_Media">
+	<title>My Weather App</title>
+</head>
+<link type="text/css" rel="stylesheet" href="/CSS/Styling.css">
+<link rel="manifest" href="/manifest.json">
+<body>
+   
+   <!-- IOS Support -->
+<link rel="apple-touch-icon" href="/Images/icons/weather-96x96.png">
+<meta name="apple-mobile-web-app-status-bar" content="#00aeef">
+<meta name="theme-color" content="#09688c">
+    
+    <section>
+	<div id="searchContainer">
+		<input id="searchInput" class="searchControl" type="text" placeholder="CIty name or Zip code">
+		<button id="searchBtn" class="searchControl">Search</button>
+	</div>
+	</section>
+    
+    
+    <section>
+	<div id="weatherContainer">
+		<div id="weatherDescription">
+			<h1 id="cityHeader"></h1>
+			<div id="weatherMain">
+				<div id="temperature"></div>
+				<div id="weatherDescriptionHeader"></div>
+				<div>
+					<img id="documentIconImg" src="" alt="">
+				</div>
+			</div>
+			<hr>
+
+			<div id="windSpeed" class="bottomDetails"></div>
+			<div id="humidity" class="bottomDetails"></div>
+		</div>
+	</div>
+	</section>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyC6VyhP0S-Vj3sBu-zY5swEwYSZUouqQ20",
+    authDomain: "weather-app-cd020.firebaseapp.com",
+    databaseURL: "https://weather-app-cd020.firebaseio.com",
+    projectId: "weather-app-cd020",
+    storageBucket: "weather-app-cd020.appspot.com",
+    messagingSenderId: "260206646373",
+    appId: "1:260206646373:web:0e77f45030f15f45a8228c",
+    measurementId: "G-B2JM605BCR"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src="Javascript/script.js"></script>
+<script src="Javascript/app.js"></script>
+</body>
+</html>
